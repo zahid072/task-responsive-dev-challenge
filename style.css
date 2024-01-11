@@ -1,0 +1,81 @@
+  @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Sora', sans-serif;
+    background-color: #FAFAF9;
+}
+.main-container{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+   width: 88%;
+   padding: 100px 0;
+   margin: 0 auto;
+}
+.left-content{
+    
+}
+.left-content>h2{
+  background-color: #F5C044;
+   padding: 8px;
+  border-radius: 50%;
+  height: 50px ;
+  width: 50px;
+}
+.left-content>h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+.left-content>p{
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.left-content-child p{
+    font-size: 18px;
+}
+.left-content-child img{
+    height: 25px;
+    margin-right: 10px;
+}
+
+.right-content{
+    position: relative;
+    margin-left: 45px;
+}
+.card-1-img, .card-2-img{
+    display: flex;
+    gap: 20px;
+}
+.card-1-img>img, .card-2-img>img{
+    height: 30px;
+}
+.card-1, .card-2{
+    background: #FFFFFF;
+    width: 390px;
+    padding: 29px 42px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.096);
+    
+}
+.card-2{
+    position: absolute;
+    bottom: 0 ;
+    left: 0;
+    margin-top: 20px;
+}
+.card-1{
+    position: absolute;
+    right: 0 ;
+    top: 0;
+}
+.card-1>p,h1, .card-2>p,h1{
+ font-size: 18px;
+ line-height: 35px;
+}
