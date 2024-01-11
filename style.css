@@ -10,15 +10,15 @@ body{
     background-color: #FAFAF9;
 }
 .main-container{
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
+  display: flex;
+
     gap: 35px;
    width: 88%;
    padding: 100px 0;
    margin: 0 auto;
 }
 .left-content{
-    
+    width: 50%;
 }
 .left-content>h2{
   background-color: #F5C044;
@@ -30,7 +30,7 @@ body{
 .left-content>h1{
     font-size: 40px;
     font-weight: 800;
-    margin: 15px 0;
+    margin: 25px 0;
 }
 .left-content>p{
     font-size: 24px;
@@ -46,8 +46,10 @@ body{
 }
 
 .right-content{
-    position: relative;
+    display: flex;
+    flex-direction: column;
     margin-left: 45px;
+    width: 45%;
 }
 .card-1-img, .card-2-img{
     display: flex;
@@ -58,24 +60,49 @@ body{
 }
 .card-1, .card-2{
     background: #FFFFFF;
-    width: 390px;
+    /* width: 390px; */
+    width: 68%;
     padding: 29px 42px;
     border-radius: 15px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.096);
     
 }
 .card-2{
-    position: absolute;
+    /* position: absolute;
     bottom: 0 ;
     left: 0;
-    margin-top: 20px;
+    margin-top: 20px; */
+    margin-right: 40%;
+    margin-top: 40px;
 }
 .card-1{
-    position: absolute;
+    /* position: absolute;
     right: 0 ;
-    top: 0;
+    top: 0; */
+    margin-left: 30%;
 }
 .card-1>p,h1, .card-2>p,h1{
  font-size: 18px;
  line-height: 35px;
 }
+
+
+/* responsive*/
+
+@media screen and (max-width:640px) {
+    .main-container{
+        flex-direction: column;
+        width: 95%;
+    }
+    .left-content{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .right-content{
+        width: 100%;
+        margin-left: 0;
+    }
+    .left-content>p{
+        font-size: 20px;
+    }
+    }
